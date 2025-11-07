@@ -31,7 +31,7 @@ A rigorous Exploratory Data Analysis (EDA) was conducted to understand the natur
 
 **Key Finding:** The Autocorrelation Function (ACF) plot of the raw, resampled data revealed a **powerful and unmistakable 24-hour seasonality**, visible as a distinct sine wave pattern.
 
-*(Insert your ACF plot with the sine wave here)*
+
 
 This discovery was the cornerstone of our entire modeling strategy. It proved that the error at any given time is strongly correlated with the error from the same time the previous day. This meant that a simple model would fail, and a sophisticated architecture capable of learning **long-range temporal dependencies** was required.
 
@@ -99,7 +99,6 @@ Our final MEO model achieved an exceptional result, demonstrating the success of
 - **Residual Analysis:** A Q-Q plot of the model's residuals showed a near-perfect fit to the theoretical normal distribution.
 - **Shapiro-Wilk Test:** The model achieved a final Shapiro-Wilk **statistic of 0.983**, which is extremely close to the perfect score of 1.0, and a **non-zero p-value**, confirming the near-normality of the residuals.
 
-*(Insert your best Training Plot, Q-Q Plot, and final "white noise" ACF plot for the MEO model here)*
 ![WhatsApp Image 2025-10-14 at 23 15 28_87266a54](https://github.com/user-attachments/assets/73ffe8eb-0c82-40dc-b8ab-e42df47e96e5)
 <img width="1188" height="790" alt="image" src="https://github.com/user-attachments/assets/1cc5013e-d726-4ac5-8519-9d9e44680944" />
 
